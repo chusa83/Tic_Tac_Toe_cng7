@@ -14,4 +14,5 @@ void mouseClicked() {
       turn++;
     }
   }
+  bigboi();
 }
