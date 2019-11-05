@@ -6,6 +6,7 @@ Conventions:
 boolean over;
 int board[][] = new int[3][3];
 int turn = 1;
+boolean restart = false;
 
 void setup() {
   size(300, 300);
@@ -22,4 +23,5 @@ void setup() {
 
 void draw() {
   boardUI();
+  restart();
 }

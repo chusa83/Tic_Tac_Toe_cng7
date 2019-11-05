@@ -24,16 +24,27 @@ void boardUI() {
         }
       }
     }
+    if (turn>9) {
+      fill(0);
+      rect(0, 0, 300, 300);
+      fill(69);
+      textSize(30);
+      text("You Tied", 150, 150);
+      text("press r to restart", 150, 250);
+    }
   } else {
-    
     fill(0);
-    rect(0,0,300,300);
+    rect(0, 0, 300, 300);
     textSize(30);
-    fill(69);
-    if(turn % 2 == 0){
-    text("crosses win", 150, 150);
-    }else {
+    fill(255);
+    if (turn % 2 == 0) {
+      text("x's win", 150, 150);
+      text("o's lose", 150, 50);
+      text("press r to restart", 150, 250);
+    } else {
+      text("x's lose", 150, 50);
       text("o's win", 150, 150);
+      text("press r to restart", 150, 250);
     }
   }
-}
+} 

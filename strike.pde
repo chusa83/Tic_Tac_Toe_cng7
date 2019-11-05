@@ -11,12 +11,10 @@ void bigboi() {
       if (board[0][0]*board[1][1]*board[2][2]== 1 || board[0][2]*board[1][1]*board[2][0]== 1) {
         over = true;
       }
+      if (board[0][0]*board[1][1]*board[2][2]== 8 || board[0][2]*board[1][1]*board[2][0]== 8) {
+        over = true;
+      }
     }
   }
-  if(turn>9 && over==false){
-    fill(0);
-    rect(0,0,300,300);
-    fill(69);
-    text("You Tied", 150,150);
-  }
+ 
 }
